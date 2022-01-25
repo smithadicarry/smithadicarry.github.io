@@ -1,0 +1,436 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+#particles-js{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: -50;
+ }
+body{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('./01.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    background-attachment: fixed;
+    opacity: 0.8;
+    color: white;
+    font-family: "Lora";
+}
+.navbar{
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 69px;
+    border-bottom: 2px solid grey;
+    margin: 0 auto;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+.navbar li:hover{
+    background-image: linear-gradient(90deg, rgb(10, 131, 212), rgb(19, 153, 70));
+
+}
+.navbar ul li{
+    margin: 0 15px;
+    color: white;
+    list-style: none;
+    font-size: 1.8rem;
+    min-width: 100px;
+    border-radius: 20px;  
+    background-image: linear-gradient(90deg, rgb(37, 164, 248), rgb(56, 233, 124));
+    box-shadow: 2px 2px 8px rgba(67, 136, 226, 0.8);
+    text-align: center;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 45px;
+}
+.mainphoto{
+    margin: 0 auto;
+    height: 260px;
+    width: 260px;
+    background-image: url('./mainphoto.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+.typewriter h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(38, 160, 85); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    text-shadow: 3px 3px 8px grey ;
+    font-weight: bold;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+      margin-top: 20px;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(80, 194, 240); }
+  }
+  .info{
+      font-family: 'Lora', serif;
+      font-size: 22px;
+      margin-top: 20px;
+      width: 70%;
+  }
+  .name {
+      font-weight: bold;
+      text-shadow: 3px 3px 5px rgba(37, 218, 97, 0.8);
+  }
+  hr{
+      width: 80%;
+
+      margin: 0 auto;
+      margin-top: 40px;
+  }
+   #about, #portfolio{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-top: 20px;
+   }
+
+   #header{
+       font-weight: bold;
+       font-size: 40px; 
+       font-family: 'Courier New', Courier, monospace;
+       text-shadow: 3px 3px 8px grey ;
+   }
+   .whoiam p{
+       display: flex;
+       flex-direction: row;
+       color: white;
+   }
+   .whoiam p:before, .whoiam p:after{
+    content: "-------";
+    flex: 1 1;
+    margin: auto;
+   }
+   .whoiam p:before {
+    margin-right: 10px
+  }
+  .whoiam p:after {
+    margin-left: 10px
+  }
+  .mydetails{
+      width: 80%;
+      margin: 10px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+  .mydetails h3{
+      color: white;
+      width: 400px;
+      margin: 10px 110px;
+      text-align: center;
+      font-size: 22px;
+  }
+  abbr[title]{
+      text-decoration: none !important;
+  }
+  #aboutinfo{
+    margin: 0 auto; 
+    margin-top: 20px;
+    width: 80%;
+    font-size: 24px;
+    text-align: center;
+  }
+  .portfolio .certificate{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .certificate img{
+      height: 250px;
+      border-radius: 10px;
+      margin: 5px 10px;
+  }
+  .certificate img:hover{
+   transform: scale(1.15); 
+   margin: 20px 20px;
+  }
+  #porthead{
+    margin: 10px 0px; 
+    font-size: 24px;
+  }
+  #porttext{
+    width: 80%; 
+    text-align: center; 
+    font-size: 20px;
+  }
+  .contact{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .contact #header{
+       margin: 20px 0px;
+  }
+  .form{
+      height: 699px;
+      width: 80%;
+      margin: 0 auto;
+      background-color: rgba(0, 0, 0, 0.);
+      border-radius: 20px;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+  }
+  .form .formtext{
+      font-size: 22px;
+  }
+  .form .forminput{
+      margin-top: 30px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .form label{
+      font-size: 22px;
+  }
+  .forminput input{
+      text-align: center;
+      font-size: 20px;
+      margin: 10px 0px;
+      height: 45px;
+      font-family: 'Lora';
+      outline: none;
+      border-radius: 20px;
+      width: 400px;
+  }
+  .forminput input:focus, .forminput textarea:focus{
+    border: 2px solid #0de0ba;
+}
+    input[type="text"], input[type="email"], textarea {
+    border: 2px solid grey;
+    background-color : rgba(0, 0, 0, 0.5); 
+    color: whitesmoke;
+    box-shadow: inset 3px 3px 10px rgba(10, 131, 212, 0.6),
+                3px 3px 10px rgba(56, 233, 124, 0.6);
+  }
+  #contactthank{
+      position: relative;
+      bottom: 350px;
+      text-align: center;
+      display: none;
+  }
+  .forminput textarea{
+      height: 210px;
+      width: 390px;
+      resize: none;
+      font-family: 'Lora';
+      font-size: 20px;
+      border-radius: 10px;
+      outline: none;
+      padding: 5px 15px;
+      text-align: center;
+      margin-top: 10px;
+      background-color: black;
+  }
+   .forminput input[type="submit"] {
+      width: 150px;
+      margin-top: 35px;
+      background-image: linear-gradient(90deg, rgb(37, 164, 248), rgb(56, 233, 124));
+      border: none;
+      outline: none;
+}
+  .forminput input[type="submit"]:hover{
+    background-image: linear-gradient(90deg, rgb(10, 131, 212), rgb(19, 153, 70));
+}
+
+.footer{
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    bottom: -455;
+    position: relative;
+}
+.socialmedia{
+    margin-top: 30px;;
+    font-size: 45px;
+}
+.socialmedia i{
+    margin: 0px 10px;
+}
+.socialmedia a{
+    color: white;
+}
+.socialmedia:active{
+    color: white;
+}
+.socialmedia .fa-twitter-square:hover{
+    color: #1DA1F2;
+}
+.socialmedia .fa-facebook:hover{
+    color: #4267B2;
+}
+.socialmedia .fa-github:hover{
+    color: orangered;
+}
+@-webkit-keyframes blinker {
+    from {opacity: 1.0;}
+    to {opacity: 0.0;}
+  }
+  .blink{
+      margin-top: 10px;
+      text-decoration: blink;
+      -webkit-animation-name: blinker;
+      -webkit-animation-duration: 0.9s;
+      -webkit-animation-iteration-count:infinite;
+      -webkit-animation-timing-function:ease-in-out;
+  }
+
+/* Responsive */
+
+@media only screen and (max-width: 900px) {
+    i{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .navbar ul li{
+        min-width: 75px ;
+        text-align: center;
+    }
+    #greet{
+        font-size: 1.8rem;
+    }
+    .mainphoto{
+        height: 230px;
+        width: 230px;
+    }
+    .info{
+        font-size: 20px;
+    }
+    .main{
+        line-height: 35px;
+    }
+   #header{
+        font-size: 35px;
+    }
+    .mydetails h3{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        min-width: 250px;
+        font-size: 20px;
+        margin: 10px 0px;
+    }
+}
+
+    /* Below 600px */
+
+@media only screen and (max-width: 600px) {
+    i{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    body{
+        background-position: center;
+        background-size: cover;
+    }
+    .navbar ul li{
+        min-width: 50px ;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    #greet{
+       font-size: 1.6rem; 
+    }
+    .mainphoto{
+        height: 200px;
+        width: 200px;
+    }
+    .info{
+        font-size: 18px;
+    }
+    .main{
+        line-height: 30px;
+    }
+    #aboutinfo{
+        text-align: center;
+        font-size: 18px;
+    }
+    .mydetails h3{
+        text-align: center;
+        min-width: 250px;
+        font-size: 15px;
+        margin: 8px 0px;
+    }
+    #header{
+        font-size: 25px;
+    }
+    .certificate img{
+        height: 200px;
+    }
+    .portfolio #porthead{
+        font-size: 18px;
+    }
+    .portfolio #porttext{
+        font-size: 16px;
+    }
+    .form .formtext{
+     font-size: 16px;   
+    }
+    
+    .forminput input, .forminput label{
+        font-size: 16px;
+        width: 250px;
+    }
+    
+    .forminput textarea{
+        width: 325px;
+        height: 200px;
+        font-size: 16px;
+    }
+    .footer {
+        font-size: 13px;
+    }
+    .socialmedia i{
+        margin-top: 0px;
+        font-size: 35px;
+    }
+    .whoiam p{
+        font-size: 13px;   
+    }
+    #contactthank{
+        position: relative;
+        text-align: center;
+        font-size: 10px;
+    }
+
+}
